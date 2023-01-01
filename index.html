@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second page</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<style>
+
+.t_main_div {
+    width: 316px;
+    position: relative;
+    margin: 50px auto;
+    }
+    .t_img_div{
+        width: 316px;
+        position: relative;
+    }
+
+    .t_img_div .t_bg_img {
+        background: url(rainbow.png) top no-repeat;
+        height: 158px;
+        width: 316px;
+    }
+
+    .t_bg_img .t_semicircle {
+        border-top-left-radius: 306px;
+        border-top-right-radius: 306px;
+        height: 158px;
+        width: 316px;
+        box-shadow: inset 0 30px 60px -10px #f7525f4d;
+    }
+
+    .t_dot {
+        border: 2px solid #131722;
+        border-radius: 50%;
+        bottom: 0;
+        box-sizing: border-box;
+        height: 8px;
+        left: calc(50% - 4px);
+        position: absolute;
+        width: 8px;
+    }
+
+    .th_arrow {
+        height: 145px;
+        align-items: center;
+        bottom: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: calc(50% - 4px);
+        position: absolute;
+        transform-origin: 50% 100%;
+        transition: transform 1.5s ease;
+        width: 8px;
+
+    }
+
+    .th_arrowShudderSell {
+        animation: th_sellShudder 10s infinite;
+        animation-duration: 10s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }
+    .th_large {
+        height: 125px;
+        width: 3px;
+        background-color: #131722;
+    }
+
+    @keyframes th_sellShudder {
+        0% {
+            transform: rotate(65deg);
+        }
+
+        25% {
+            transform: rotate(70deg);
+        }
+
+        50% {
+            transform: rotate(73deg);
+        }
+
+        75% {
+            transform: rotate(70deg);
+        }
+
+        100% {
+            transform: rotate(65deg);
+        }
+    }
+    .th_one{
+        width: 63px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .t_one{
+        position:absolute;
+        left: -63px;
+        bottom: 36px;
+    }
+    .t_two{
+        position:absolute;
+        left: 9px;
+        bottom: 127px;
+    }
+    .t_three{
+        position:absolute;
+        left: 127px;
+        bottom: 159px;
+    }
+    .t_four{
+        position:absolute;
+        left: 253px;
+        bottom: 119px;
+    }
+    .t_five{
+        position:absolute;
+        left: 318px;
+        bottom: 30px;
+    }
+    
+</style>
+
+<body>
+
+    <div class="t_main_div">
+        <div class="t_main">
+            <div class="th_one t_one">
+                <p>STRONG SELL</p>
+            </div>
+            <div class="th_one t_two">
+                <p>SELL</p>
+            </div>
+            <div class="th_one t_three">
+                <p>NEWTRUL</p>
+            </div>
+            <div class="th_one t_four">
+                <p>BUY</p>
+            </div>
+            <div class="th_one t_five">
+                <p>STRONG BUY</p>
+            </div>
+            <div class="t_img_div">
+                <div class="t_bg_img">
+                    <div class="t_semicircle"></div>
+                </div>
+                <div class="t_dot"></div>
+                <div class="th_arrowSell th_arrowShudderSell th_arrow">
+                    <div class="th_large"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
